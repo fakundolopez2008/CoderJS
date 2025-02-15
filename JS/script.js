@@ -11,6 +11,9 @@ function multiplicacion (numero1,numero2){
     console.log ("El resultado es: " + complemento)
 }
 function division (numero1,numero2){
+    if (numero2 === 0) {
+        alert("Error: No se puede dividir por 0");
+    }
     let resto = numero1 / numero2;
     console.log ("El resultado es: " + resto)
 }
