@@ -56,9 +56,9 @@ while (opcion !== "7") {
             if (resultados.length === 0){
                 console.log("No se realizaron operaciones");
             } else {
-                for(let i = 0; i < resultados.length; i++){
-                    console.log ("Los resultados registrados son los siguientes: " + resultados[i]+"\n"); 
-                } 
+                for (let resultado of resultados) {
+                    console.log("Los resultados registrados son los siguientes: " + resultado + "\n");
+                }
             }                
             break; 
         case "7":
