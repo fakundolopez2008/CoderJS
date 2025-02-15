@@ -1,1 +1,1 @@
-# CoderJS
+# Primera Pre-Entrega del curso de JavaScript de Coderhouse
