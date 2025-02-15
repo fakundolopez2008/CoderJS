@@ -13,31 +13,37 @@ function multiplicacion (numero1,numero2){
 function division (numero1,numero2){
     if (numero2 === 0) {
         alert("Error: No se puede dividir por 0");
-    }
+    } else if ((numero2 != 0)){
     let resto = numero1 / numero2;
     console.log ("El resultado es: " + resto)
+    }
 }
 
 let num1 = parseFloat(prompt("Ingresar Primer Número"));
 let num2 = parseFloat(prompt("Ingresar Segundo Número"));
 let opcion = prompt("Que calculo desea realizar?\n1 - Sumar\n2- Restar\n3- Multiplicar\n4- Dividir\n5- Salir");
 
-switch (opcion) {
-    case "1":
-        suma(num1,num2);
-        break;
-    case "2":
-        resta(num1,num2);
-        break;
-    case "3":
-        multiplicacion(num1,num2);
-        break;
-    case "4":
-        division(num1,num2);
-        break;    
-    default:
-        if (opcion > 4){
-            alert ("Programa Finalizado");
-            console.log("Gracias por usar Calculator3000");
-        }        
+while (opcion <= 4){
+    
+    switch (opcion) {
+        case "1":
+            suma(num1,num2);
+            break;
+        case "2":
+            resta(num1,num2);
+            break;
+        case "3":
+            multiplicacion(num1,num2);
+            break;
+        case "4":
+            division(num1,num2);
+            break;    
+        default:
+            break;        
+    }
+    opcion = prompt("Que calculo desea realizar?\n1 - Sumar\n2- Restar\n3- Multiplicar\n4- Dividir\n5- Salir");
 }
+if (opcion > 4){
+    alert ("Programa Finalizado");
+    console.log("Gracias por usar Calculator3000");
+} 
